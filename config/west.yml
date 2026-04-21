@@ -4,7 +4,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: zmk-keyboard-emma-louise
+    - name: zmk-keyboard-emma_louise
       url-base: https://github.com/Max585t/zmk-keyboard-emma-louise
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
