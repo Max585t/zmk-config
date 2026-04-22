@@ -100,36 +100,26 @@
         caps_led: led_3 {
             gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
         };
-
+    };
+    
     pwm_default {
                 backlight_led: led_2 {
             gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
         };
     };
+
     pwm0_default: pwm0_default {
         group1 {
             psels = <NRF_PSEL(PWM_OUT0, 1, 0)>;
         };
     };
+
     pwm0_sleep: pwm0_sleep {
         group1 {
             psels = <NRF_PSEL(PWM_OUT0, 1, 0)>;
             low-power-enable;
         };
     };
-    };
-
-    // If you are powering the SoC from the VDDH pin, uncomment this block.
-    // Otherwise, delete it.
-
-    // vbatt: vbatt {
-    //     compatible = "zmk,battery-nrf-vddh";
-    // };
-
-    // If you are powering the SoC from the VDD pin and you have a voltage divider
-    // routed to an analog pin to read the battery voltage, uncomment this block
-    // and assign the correct ADC channel and resistance values.
-    // Otherwise, delete it.
 
     vbatt: vbatt {
         compatible = "voltage-divider";
