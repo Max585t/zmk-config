@@ -5,7 +5,7 @@
 if BOARD_EMMALOUISE
 
 config ZMK_KEYBOARD_NAME
-    default \"EmmaLouise\"
+    default "EmmaLouise"
 
 if USB
 
