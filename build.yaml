@@ -7,6 +7,6 @@
 #
 board: [ "emma_louise" ]
 include:
-  - board: bt75
+  - board: bt75_v1
     artifact-name: emma-louise-default
 #
