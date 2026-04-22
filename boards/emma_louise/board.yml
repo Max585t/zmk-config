@@ -1,5 +1,0 @@
-board:
-  name: emma_louise
-  vendor: forgetfulpigeonkeyboards
-  socs:
-  - name: nrf52840
