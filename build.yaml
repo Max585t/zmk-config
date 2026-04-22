@@ -5,8 +5,8 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
-board: [ "emma_louise" ]
+board: [ "emmalouise" ]
 include:
   - board: emmalouise
-    artifact-name: emma-louise-default
+    artifact-name: emmalouise-default
 #
