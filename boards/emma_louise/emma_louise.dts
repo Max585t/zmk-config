@@ -105,6 +105,7 @@
                 backlight_led: led_2 {
             gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
         };
+    };
     pwm0_default: pwm0_default {
         group1 {
             psels = <NRF_PSEL(PWM_OUT0, 1, 0)>;
@@ -116,7 +117,6 @@
             low-power-enable;
         };
     };
-    }
     };
 
     // If you are powering the SoC from the VDDH pin, uncomment this block.
