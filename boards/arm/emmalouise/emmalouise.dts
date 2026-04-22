@@ -100,36 +100,26 @@
         caps_led: led_3 {
             gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
         };
+    };
 
     pwm_default {
-                backlight_led: led_2 {
+        backlight_led: led_2 {
             gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
         };
+    };
+
     pwm0_default: pwm0_default {
         group1 {
             psels = <NRF_PSEL(PWM_OUT0, 1, 0)>;
         };
     };
+
     pwm0_sleep: pwm0_sleep {
         group1 {
             psels = <NRF_PSEL(PWM_OUT0, 1, 0)>;
             low-power-enable;
         };
     };
-    }
-    };
-
-    // If you are powering the SoC from the VDDH pin, uncomment this block.
-    // Otherwise, delete it.
-
-    // vbatt: vbatt {
-    //     compatible = "zmk,battery-nrf-vddh";
-    // };
-
-    // If you are powering the SoC from the VDD pin and you have a voltage divider
-    // routed to an analog pin to read the battery voltage, uncomment this block
-    // and assign the correct ADC channel and resistance values.
-    // Otherwise, delete it.
 
     vbatt: vbatt {
         compatible = "voltage-divider";
@@ -138,20 +128,6 @@
         full-ohms = <(100000 + 100000)>;
     };
 };
-
-// Uncomment this to switch from the LDO to the DC/DC regulator on REG0.
-// Do not enable the DC/DC regulator without an LC filter connected to the DCCH
-// pin, or the keyboard will not boot until an LC filter is connected.
-// &reg0 {
-//     status = "okay";
-// };
-
-// Uncomment this to switch from the LDO to the DC/DC regulator on REG1.
-// Do not enable the DC/DC regulator without an LC filter connected to the DCC
-// pin, or the keyboard will not boot until an LC filter is connected.
-// &reg1 {
-//     regulator-initial-mode = <NRF5X_REG_MODE_DCDC>;
-// };
 
 &adc {
     status = "okay";
