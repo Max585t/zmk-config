@@ -2,6 +2,10 @@
 # See https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html#write-kconfig-files
 # for more information.
 
+CONFIG_SOC_SERIES_NRF52X=y
+CONFIG_SOC_NRF52840_QIAA=y
+CONFIG_BOARD_EMMALOUISE=y
+
 # Enable MPU
 CONFIG_ARM_MPU=y
 
