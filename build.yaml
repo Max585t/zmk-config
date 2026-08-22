@@ -9,4 +9,5 @@ board: [ "emmalouise" ]
 include:
   - board: emmalouise
     artifact-name: emmalouise-default
+    snippet: zmk-usb-logging
 #
