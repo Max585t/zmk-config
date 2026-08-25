@@ -8,6 +8,6 @@
 board: [ "emmalouise" ]
 include:
   - board: emmalouise
-    artifact-name: emmalouise-default
+    artifact-name: emmalouise-test
     snippet: zmk-usb-logging
 #
