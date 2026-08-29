@@ -8,6 +8,6 @@
 board: [ "emmalouise" ]
 include:
   - board: emmalouise
-    artifact-name: emmalouise-test
+    artifact-name: emmalouise-08-29-26-001
     snippet: zmk-usb-logging
 #

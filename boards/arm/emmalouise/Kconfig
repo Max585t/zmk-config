@@ -4,7 +4,7 @@
 
 if BOARD_EMMALOUISE
 
-CONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS = 1000;
+# CONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS = 1000;
 
 # Define any board-specific Kconfig options here.
 # If there are none, you may delete this file.
