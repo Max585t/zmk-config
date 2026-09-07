@@ -97,16 +97,7 @@
             gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
         };
 
-        indicators {
-            compatible = "zmk,indicator-leds";
-            caps_lock_indicator: caps_lock {
-                indicator = <HID_INDICATOR_CAPS_LOCK>;
-                leds = <&caps_lock_led>;
-                active-brightness = <0>;
-                inactive-brightness = <100>;
-                disconnected-brightness = <50>;
-            };
-        };
+       
 
         // pwm_default {
         //     backlight_led: led_2 {
@@ -127,6 +118,17 @@
         //     };
         // };
     };
+
+    indicators {
+            compatible = "zmk,indicator-leds";
+            caps_lock_indicator: caps_lock {
+                indicator = <HID_INDICATOR_CAPS_LOCK>;
+                leds = <&caps_lock_led>;
+                active-brightness = <100>;
+                inactive-brightness = <100>;
+                disconnected-brightness = <100>;
+                };
+            };
 
     vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
